@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Title</title>
+    <title>"Ferrari screwed up" complaint form</title>
 </head>
 <body>
 <div id="indexBody">
@@ -340,128 +340,146 @@
     <div class="container">
         <div id="indexContainer" class="row justify-content-center bg-light bg-opacity-75" id="contentArea">
             <div class="col-md-6 col-md-offset-3">
-                <h1 class="text-center"> Join our Strategy team!</h1>
+                <h1 class="text-center">"Ferrari screwed up" complaint form</h1>
                 <form name="formOne" class="needs-validation" action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="get" autocomplete="on" onsubmit="return validateForm()">
                     <div class="mb-3">
-                        <label class="form-label">Full name</label>
+                        <label class="form-label">Driver's name</label>
                         <input type="text" class="form-control" placeholder="Enter full name" name="fullName" value="">
                         <div id="invalidUsername" class="invalid-feedback">
-                            Please Insert first and last names, seperated by a space.
+                            Please Insert first and last name, seperated by a space.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Password</label>
+                        <label class="form-label">License Plate of whoever hit you</label>
                         <div class="input-group has-validation">
-                            <input type="password" class="form-control" placeholder="Enter password" name="pass" value="">
+                            <input type="password" class="form-control" placeholder="Enter plate number" name="pass" value="">
                         </div>
                         <div id="invalidPassword" class="invalid-feedback">
-                            Please write a password longer than 8 letters, that contains at least one capital letter, regular letter and number, as well as no spaces.
+                            Please write a license plate longer than 8 letters, that contains at least one capital letter, regular letter and number, as well as no spaces.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">E-Mail</label>
+                        <label class="form-label">Your E-mail address (we won't respond but still)</label>
                         <input type="email" class="form-control" placeholder="Enter your mail address" name="mail" value="">
                         <div id="invalidMail" class="invalid-feedback">
                             Please write your e-mail address so that it includes an `@` symbol and a dot.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Website</label>
+                        <label class="form-label">Website for new parts for the car</label>
                         <input type="url" class="form-control" placeholder="Enter your website address" name="website" value="">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Phone</label>
-                        <input type="tel" class="form-control" placeholder="Enter your phone number (must be 9 to 10 numbers long)" name="phone" value="">
+                        <label class="form-label">Phone number of the race marshal that saw you spin out</label>
+                        <input type="tel" class="form-control" placeholder="Enter the marshal's phone number (must be 9 to 10 numbers long)" name="phone" value="">
                         <div id="invalidPhone" class="invalid-feedback">
-                            Please re-write your phone number to be composed only of numbers and 9-10 letters long.
+                            Please re-write the phone number to be composed only of numbers and 9-10 letters long.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Coffee</label>
-                        <input type="number" class="form-control" placeholder="How many coffee cups did you drink today? (0 by default)" name="coffee" value="0">
+                        <label class="form-label">Screw ups</label>
+                        <input type="number" class="form-control" placeholder="How many screw ups did we already do today? (10 by default)" name="coffee" value="10">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Temper</label>
-                        <input type="range" class="form-control" placeholder="What's your temper on a scale from 0 to 100? (50 by default)" name="temper" value="" oninput="this.nextElementSibling.value = `Value: ` +this.value + ` degrees`">
-                        <output>Value: 50 degrees</output>
+                        <label class="form-label">What lap did Verstappen pass you at?</label>
+                        <input type="range" class="form-control" placeholder="What lap did Verstappen pass you at?" name="temper" value="1" oninput="this.nextElementSibling.value = `Lap ` +this.value ">
+                        <output>Lap 1</output>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Address</label>
-                        <textarea class="form-control" placeholder="Enter your address" name="address" rows="2" cols="20"></textarea>
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" placeholder="Please describe carefully how we fucked up this time :)" name="address" rows="2" cols="20"></textarea>
                     </div>
                     <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Interests</legend>
+                        <legend class="col-form-label col-sm-2 pt-0">Category of fuckup</legend>
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios4" value="Reading">
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios4" value="pitting">
                                 <label class="form-check-label" for="gridRadios4">
-                                    Reading
+                                    Bad pitting time
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios5" value="Painting">
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios5" value="tires">
                                 <label class="form-check-label" for="gridRadios5">
-                                    Painting
+                                    Forgot To warm up tires
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios6" value="Coding" >
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios6" value="water" >
                                 <label class="form-check-label" for="gridRadios6">
-                                    Coding
+                                    Accidentally opened Charles' water tube mid-race
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios7" value="Running" >
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios7" value="tire" >
                                 <label class="form-check-label" for="gridRadios7">
-                                    Running
+                                    Took one of Sainz's tires during a pit stop
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios8" value="Swimming" >
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios8" value="timing" >
                                 <label class="form-check-label" for="gridRadios8">
-                                    Swimming
+                                    What even is timing your pit stops
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios9" value="sBin" >
+                                <label class="form-check-label" for="gridRadios8">
+                                    Binotto told us to spin our car for funsies
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios10" value="disk throw" >
+                                <label class="form-check-label" for="gridRadios8">
+                                    Someone threw an air duct into Charles' car. Again...
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="interests[]" id="gridRadios11" value="overcooking" >
+                                <label class="form-check-label" for="gridRadios8">
+                                    Charles got too competitive and span into a wall again
                                 </label>
                             </div>
                             <div id="invalidHobby" class="invalid-feedback">
-                                Please select at least 3 hobbies from the list.
+                                Please select at least 3 screw-ups from the list.
                             </div>
                         </div>
                     </fieldset>
                     <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <legend class="col-form-label col-sm-2 pt-0">Who passed you first</legend>
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="male">
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="max">
                                 <label class="form-check-label" for="gridRadios1">
-                                    Male
+                                    Max Verstappen
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="Female">
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="lewis">
                                 <label class="form-check-label" for="gridRadios2">
-                                    Female
+                                    Lewis Hamilton
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="gridRadios3" value="Other" >
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios3" value="other" >
                                 <label class="form-check-label" for="gridRadios3">
-                                    Other
+                                    The other Ferrari Driver
                                 </label>
                             </div>
                             <div id="invalidGender" class="invalid-feedback">
-                                Please select a gender from the list.
+                                Please select a driver from the list.
                             </div>
                         </div>
                     </fieldset>
                     <div class="mb-3">
-                        <label class="form-label">Age</label>
+                        <label class="form-label">How many "We are checking" did we say during the race?</label>
                         <br>
-                        <input type="range" class="form-control" placeholder="Select your age (between 23 to 38)" name="age" value="23" min="23" max="38" oninput="this.nextElementSibling.value = `Age: ` +this.value" required>
-                        <output>Age: 23</output>
+                        <input type="range" class="form-control" placeholder="Select your age (between 23 to 38)" name="age" value="23" min="23" max="38" oninput="this.nextElementSibling.value = this.value + ` times`" required>
+                        <output>23 times</output>
                     </div>
                     <div class="row">
                         <div class="col-auto mx-auto">
-                            <input type="submit" value="  submit  ">
+                            <input type="submit" value="  Send report to the shredder  ">
                         </div>
                     </div>
                 </form>

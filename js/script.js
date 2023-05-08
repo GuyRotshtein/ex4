@@ -31,7 +31,7 @@ function validateForm() {
     //password verification
     if (!onePassword || !regPass.test(onePassword)) {
         document.getElementById(`invalidPassword`).style.display = `block`;
-        window.alert(`Please rewrite your password to include at least one capital letter, small letter, number, and to be at lest 8 letters long.`);
+        window.alert(`Please rewrite the license plate to include at least one capital letter, small letter, number, and to be at lest 8 letters long.`);
         if (errorFlag = 0){
             window.setTimeout(function() { document.formOne.pass.focus(); },0);
             errorFlag = 1;
@@ -49,7 +49,7 @@ function validateForm() {
     //phone input verification
     if (!onePhone || onePhone.length <9 || onePhone.length > 10 || !regPhone.test(onePhone)){
         document.getElementById(`invalidPhone`).style.display = `block`;
-        window.alert(`Please write your phone number to be composed only of numbers and 9-10 letters long.`);
+        window.alert(`Please write the marshal's phone number to be composed only of numbers and 9-10 letters long.`);
         if (errorFlag = 0){
             window.setTimeout(function() { document.formOne.phone.focus(); },0);
             errorFlag = 1;
@@ -63,7 +63,7 @@ function validateForm() {
     }
     if (count < 3){
         document.getElementById(`invalidHobby`).style.display = `block`;
-        window.alert(`Please select at least 3 hobbies.`);
+        window.alert(`Please select at least 3 screw-ups from the list.`);
         if (errorFlag = 0){
             window.setTimeout(function() { oneCheck[0].focus(); },0);
             errorFlag = 1;
@@ -78,7 +78,7 @@ function validateForm() {
     }
     if (!checkGender){
         document.getElementById(`invalidGender`).style.display = `block`;
-        window.alert(`Please select a gender form the list.`);
+        window.alert(`Please select a driver form the list.`);
         if (errorFlag = 0){
             window.setTimeout(function() { oneGender[0].focus(); },0);
             errorFlag = 1;

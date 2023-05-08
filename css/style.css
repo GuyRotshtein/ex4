@@ -48,3 +48,14 @@ background-color: #ff2800;
 .boldLabel{
     font-weight: bold;
 }
+#goToEdit{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s;
+}
+#goToEdit:hover{
+    color: darkgray;
+    font-weight: 800;
+    transition: 0.2s;
+}
